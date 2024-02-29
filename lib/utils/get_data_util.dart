@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import 'package:flutter_coinmarketcapapi_demo/model/chart_sample_data.dart';
-import 'package:flutter_coinmarketcapapi_demo/model/price_24h_data.dart';
+import 'package:flutter_coinmarketcapapi_demo/model/chart_sample_data_model.dart';
+import 'package:flutter_coinmarketcapapi_demo/model/price_24h_data_model.dart';
 import 'package:web_socket_channel/io.dart';
 
-import '../model/coin.dart';
+import '../model/coins_model.dart';
 import '../service/wp_http.dart';
 import 'index.dart';
 //'/api/v3/ticker/24hr'

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_coinmarketcapapi_demo/Widget/navigaionBar.dart';
-import 'package:flutter_coinmarketcapapi_demo/pages/kline_chart.dart';
+import 'package:flutter_coinmarketcapapi_demo/Widget/navigation_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.grey),
         //useMaterial3: true,
       ),
-      home: NavigationBarPage(),
+      home: const NavigationBarPage(),
       //home: CryptolistPage(),
     );
   }

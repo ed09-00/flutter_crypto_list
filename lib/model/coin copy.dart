@@ -188,7 +188,7 @@ class Platform {
 
     factory Platform.fromJson(Map<String, dynamic> json) => Platform(
         id: json["id"],
-        name: nameValues.map[json["name"]]!,
+        name: nameValues.map[json["name"]]== null? "":json["name"],
         symbol: symbolValues.map[json["symbol"]]!,
         slug: slugValues.map[json["slug"]]!,
         tokenAddress: json["token_address"],

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_coinmarketcapapi_demo/pages/crypto_list.dart';
-import 'package:flutter_coinmarketcapapi_demo/pages/kline_chart.dart';
-import 'package:flutter_coinmarketcapapi_demo/pages/ws.dart';
+import 'package:flutter_coinmarketcapapi_demo/pages/crypto_list_page.dart';
+import 'package:flutter_coinmarketcapapi_demo/pages/kline_chart_page.dart';
 
 class NavigationBarPage extends StatefulWidget {
   const NavigationBarPage({super.key});
@@ -41,27 +40,11 @@ class _NavigationExampleState extends State<NavigationBarPage> {
             icon: Icon(Icons.add_chart ),
             label: 'chart',
           ),
-          NavigationDestination(
-            //selectedIcon: Icon(Icons.school),
-            icon: Icon(Icons.currency_exchange),
-            label: 'trade',
-          ),
-          NavigationDestination(
-            //selectedIcon: Icon(Icons.school),
-            icon: Icon(Icons.settings),
-            label: 'setting',
-          ),
         ],
       ),
       body: <Widget>[
-        CryptolistPage(),
-        KlineChartPage(),
-        WsPage(),
-        Container(
-          color: Colors.blue,
-          alignment: Alignment.center,
-          child: const Text('setting'),
-        ),
+        const CryptolistPage(),
+        const KlineChartPage(),
       ][currentPageIndex],
     );
   }

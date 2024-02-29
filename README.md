@@ -10,9 +10,9 @@ CoinMarketCap: https://coinmarketcap.com/api/documentation/v1/#section/Authentic
 
 ## 特色  
 - 使用 [dio](https://pub.dev/packages/dio "dio") 操作RESTful API。
-- 使用 [web_socket_channel ](https://pub.dev/packages/web_socket_channel "web_socket_channel ") 獲取及時價格資料。
-- 使用 [syncfusion_flutter_charts](https://pub.dev/packages/syncfusion_flutter_charts "syncfusion_flutter_charts")將從[Binance API](https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints "Binance API")獲取資料轉換為K線圖。
-- 使用 [intl ](https://pub.dev/packages/intl "intl ")來格式化圖表上顯示時間。
+- 使用 [web_socket_channel ](https://pub.dev/packages/web_socket_channel "web_socket_channel ") 獲取 [Binance API](https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints "Binance API") 及時價格資料。
+- 使用 [syncfusion_flutter_charts](https://pub.dev/packages/syncfusion_flutter_charts "syncfusion_flutter_charts") 將從 [Binance API](https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints "Binance API") 獲取資料轉換為K線圖。
+- 使用 [intl ](https://pub.dev/packages/intl "intl ") 來格式化圖表上顯示時間。
 - 使用 [shared_preferences](https://pub.dev/packages/shared_preferences "shared_preferences") 操作本地儲存資料。
 
 

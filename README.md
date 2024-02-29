@@ -4,7 +4,7 @@
 
 使用Binance API 與 CoinMarketCap API獲取虛擬貨幣價格資訊並做成圖表
 
-Binance api: https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints
+Binance api: https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints  
 CoinMarketCap: https://coinmarketcap.com/api/documentation/v1/#section/Authentication    
 
 ## 功能  

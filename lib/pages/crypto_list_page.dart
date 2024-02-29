@@ -13,12 +13,14 @@ class CryptolistPage extends StatefulWidget {
 }
 
 class _CryptolistPageState extends State<CryptolistPage> {
-  Future<Coins> coinList = GetDataFromJson().fetchCryptoListData();
   //從local storage讀取自選紀錄
+  Future<Coins> coinList = GetDataFromJson().fetchCryptoListData();
+  
   late List<String> cryptoList;
   List<String> cryptoSymbols = [];
   List<Data> printList = [];
   List<Data> allCrypto = [];
+
   @override
   void initState() {
     super.initState();
@@ -69,7 +71,7 @@ class _CryptolistPageState extends State<CryptolistPage> {
   Widget _mainView() {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(title: const Text('crypto list')),
+      appBar: AppBar(title: const Text('虛擬貨幣自選清單')),
       body: Stack(
         children: [
           FutureBuilder<Coins>(

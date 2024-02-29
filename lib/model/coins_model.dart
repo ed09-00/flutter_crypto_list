@@ -36,10 +36,10 @@ class Coins {
 class Status {
   String? timestamp;
   int? errorCode;
-  Null? errorMessage;
+  Null errorMessage;
   int? elapsed;
   int? creditCount;
-  Null? notice;
+  Null notice;
   int? totalCount;
 
   Status(

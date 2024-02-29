@@ -1,16 +1,10 @@
-# flutter_coinmarketcapapi_demo
+# Flutter 虛擬貨幣清單與即時價格檢視
+<img src="https://cdn.discordapp.com/attachments/917430039597965334/1212658297606512721/image.png?ex=65f2a30c&is=65e02e0c&hm=b22db36090779739dacac03a30d46d27179bc7adc43e09f98a1e34fa80c62957" height="686px" width="322px" /><img src="https://cdn.discordapp.com/attachments/917430039597965334/1212658833839620166/image.png?ex=65f2a38c&is=65e02e8c&hm=970745f0a3543780ec1e999bdf90ae111ebeed78be4cccc22a84cc28c3a70445&" height="686px" width="322px" />
 
-A new Flutter project.
 
-## Getting Started
+使用Binance API 與 CoinMarketCap API獲取虛擬貨幣價格資訊並做成圖表
 
-This project is a starting point for a Flutter application.
+Binance api: https://binance-docs.github.io/apidocs/spot/en/#market-data-endpoints
+CoinMarketCap: https://coinmarketcap.com/api/documentation/v1/#section/Authentication
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##Demo

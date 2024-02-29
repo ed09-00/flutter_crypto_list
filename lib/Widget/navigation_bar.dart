@@ -31,8 +31,6 @@ class _NavigationExampleState extends State<NavigationBarPage> {
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
-            //selectedIcon:  Icon(Icons.currency_bitcoin),
-            //icon: Icon(Icons.home_outlined)
             icon: Icon(Icons.currency_bitcoin),
             label: 'list',
           ),

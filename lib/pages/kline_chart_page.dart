@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_coinmarketcapapi_demo/Widget/interval_button_widget.dart';
 import 'package:flutter_coinmarketcapapi_demo/model/chart_sample_data_model.dart';
@@ -119,7 +118,7 @@ class _KlineChartPageState extends State<KlineChartPage> {
     priceUpdateChannel.stream.listen((message) {
       Map newData = jsonDecode(message);
       //當前價格
-      var newPrice =
+      ChartSampleData newPrice =
           ChartSampleData.realTimeFromJson(newData as Map<String, dynamic>);
 
       var price = newPrice.high;
@@ -145,42 +144,61 @@ class _KlineChartPageState extends State<KlineChartPage> {
           width: 5,
         ),
         IntervalButtonWidget(
+          ishighLightText: index==0?true:false,
           text: '1m',
           onTap: () {
             index = 0;
-
             loadCandle(interval: interval[index]);
+            setState(() {
+              
+            });
           },
         ),
         IntervalButtonWidget(
+          
+          ishighLightText: index==1?true:false,
           text: '15m',
           onTap: () {
             index = 1;
-
             loadCandle(interval: interval[index]);
+             setState(() {
+              
+            });
           },
         ),
-        IntervalButtonWidget(
+        IntervalButtonWidget(          
+          ishighLightText: index==2?true:false,
           text: '1h',
           onTap: () {
             index = 2;
-
             loadCandle(interval: interval[index]);
+             setState(() {
+              
+            });
           },
         ),
         IntervalButtonWidget(
+          
+          ishighLightText: index==3?true:false,
           text: '4h',
           onTap: () {
             index = 3;
-
             loadCandle(interval: interval[index]);
+             setState(() {
+              
+            });
           },
         ),
         IntervalButtonWidget(
+          
+          ishighLightText: index==4?true:false,
           text: '1d',
           onTap: () {
             index = 4;
             loadCandle(interval: interval[index]);
+             setState(() {
+              
+            });
           },
         ),
       ],
@@ -322,35 +340,7 @@ class _KlineChartPageState extends State<KlineChartPage> {
               ),
             ),
           ),
-          // Row(
-          //   children: [
-          //     Expanded(
-          //       child: Padding(
-          //         padding: const EdgeInsetsDirectional.all(3),
-          //         child: ElevatedButton(
-          //           style:
-          //               ElevatedButton.styleFrom(backgroundColor: Colors.green),
-          //           onPressed: () {},
-          //           child: const Text('buy'),
-          //         ),
-          //       ),
-          //     ),
-          //     const SizedBox(
-          //       width: 10,
-          //     ),
-          //     Expanded(
-          //       child: Padding(
-          //         padding: const EdgeInsetsDirectional.all(3),
-          //         child: ElevatedButton(
-          //           style:
-          //               ElevatedButton.styleFrom(backgroundColor: Colors.red),
-          //           onPressed: () {},
-          //           child: const Text('sell'),
-          //         ),
-          //       ),
-          //     ),
-          //   ],
-          // )
+         
         ],
       ),
     );
@@ -364,9 +354,6 @@ class _KlineChartPageState extends State<KlineChartPage> {
     );
   }
 
-  Future<void> resetChart() async {
-    setState(() {});
-  }
 
   Future<void> loadCandle(
       {String? symbol = 'BTC', String? interval = '1m'}) async {
@@ -380,11 +367,7 @@ class _KlineChartPageState extends State<KlineChartPage> {
   Future<void> load24hPrice({String? symbol = 'BTC'}) async {
     _priceEntity =
         await GetDataFromJson().fetchKline24hDataFromBianaceApi(symbol: symbol);
-    /*
-    _highPrice = _priceEntity!.highPrice;
-    _lowPrice = _priceEntity!.lowPrice;
-    _volumn = _priceEntity!.volume;
-    */
+
     _highPrice =
         double.parse(_priceEntity!.highPrice).toStringAsFixed(2).toString();
     _lowPrice =

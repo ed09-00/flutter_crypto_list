@@ -78,19 +78,6 @@ class _SearchAddPageState extends State<SearchAddPage> {
               },
             );
           }),
-          // Expanded(
-          //   child: ListView.builder(
-          //     itemCount: printDatas.length,
-          //     itemBuilder: (context, index) {
-          //       return CoinListWidget(
-          //          id: printDatas[index].id,
-          //           symbol: printDatas[index].symbol,
-          //           name:  printDatas[index].name,
-          //           price:  printDatas[index].quote?.uSD?.price?.toStringAsFixed(2),
-          //       );
-          //     },
-          //   ),
-          // ),
         ],
       ),
     );

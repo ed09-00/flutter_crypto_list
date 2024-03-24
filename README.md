@@ -1,4 +1,4 @@
-![image](https://github.com/ed09-00/flutter_crypto_list/assets/74740385/dd1977e5-c4d4-47cf-9922-8161bf2d6d9e)# Flutter 虛擬貨幣清單與即時價格顯示
+# Flutter 虛擬貨幣清單與即時價格顯示
 ## Demo  
 [<img src="https://i.imgur.com/CONrg2F.png">](https://youtu.be/KCBj3toTTBE)  
 

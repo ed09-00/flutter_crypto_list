@@ -1,9 +1,10 @@
-# Flutter 虛擬貨幣清單與即時價格顯示
+![image](https://github.com/ed09-00/flutter_crypto_list/assets/74740385/dd1977e5-c4d4-47cf-9922-8161bf2d6d9e)# Flutter 虛擬貨幣清單與即時價格顯示
 ## Demo  
-[<img src="https://cdn.discordapp.com/attachments/917430039597965334/1212862524010266664/image.png?ex=65f3613f&is=65e0ec3f&hm=6513350db1572501ae17e4c9edf9b48fd48fe985bb178772a7753ffc8f420a95&">](https://youtu.be/KCBj3toTTBE)  
+[<img src="https://i.imgur.com/CONrg2F.png">](https://youtu.be/KCBj3toTTBE)  
+
 
 ## 介面
-<img src="https://cdn.discordapp.com/attachments/917430039597965334/1212658297606512721/image.png?ex=65f2a30c&is=65e02e0c&hm=b22db36090779739dacac03a30d46d27179bc7adc43e09f98a1e34fa80c62957" height="686px" width="322px" /><img src="https://cdn.discordapp.com/attachments/917430039597965334/1212658833839620166/image.png?ex=65f2a38c&is=65e02e8c&hm=970745f0a3543780ec1e999bdf90ae111ebeed78be4cccc22a84cc28c3a70445&" height="686px" width="322px" />
+<img src="https://imgur.com/nmChEjP.png" height="686px" width="322px" /><img src="https://i.imgur.com/Uwu4B32.png" height="686px" width="322px" />
 
 
 使用Binance API 與 CoinMarketCap API獲取虛擬貨幣價格資訊並做成圖表
